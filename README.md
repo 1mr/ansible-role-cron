@@ -30,9 +30,11 @@ None
 
 ## Example Playbook
 
+```yaml
     - hosts: servers
       roles:
          - { role: 1mr.cron, tags: cron }
+```
 
 ## License
 
