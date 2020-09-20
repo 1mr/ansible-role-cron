@@ -1,7 +1,7 @@
 ---
 # tasks file for 1mr.cron
 - name: add cron.d file(s)
-  template: src=cron.j2 dest=/etc/cron.d/{{ item.file }}
+  template: src=cron.j2 dest=/etc/cron.d/{{ item.file }} mode=0644
   with_items: '{{ cron }}'
   when: (cron is defined) and (item.state | default('present') == 'present')
 
