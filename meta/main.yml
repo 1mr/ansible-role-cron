@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  role_name: cron
+  author: Stas Stavnichuk
+  description: configure cron.d files
+  license: MIT
+  min_ansible_version: 2.5
+  platforms:
+  - name: Debian
+    versions:
+    - buster
+    - jessie
+  galaxy_tags:
+    - cron
+    - debian
