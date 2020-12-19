@@ -12,7 +12,7 @@ env:
     - MOLECULE_DISTRO: stretch
 
 install:
-  - pip install yamllint ansible-lint flake8 molecule docker
+  - pip install yamllint ansible-lint flake8 'molecule[docker]' docker
   
 before_script:
   - cd ../
